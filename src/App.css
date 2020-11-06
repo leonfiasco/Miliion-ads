@@ -17,6 +17,13 @@
   background-color: #233C64;
 }
 
+.header {
+  text-align: center;
+  border: transparent;
+  background-color: blue;
+  padding: 2rem 3rem;
+}
+
 
 .main {
   height: 75vh;
