@@ -21,7 +21,7 @@
 .header {
   text-align: center;
   border: transparent;
-  background-color: blue;
+  background-color: #227EB3;
   padding: 2rem 3rem;
 }
 
@@ -41,4 +41,5 @@
 
 .temparature {
   display: flex;
+  margin: 0 auto;
 }
