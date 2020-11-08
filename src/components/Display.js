@@ -1,17 +1,26 @@
 import React from 'react';
+import Image from './Image';
 
 
 
 const Display = ({ postCode}) => {
-    
+    console.log(postCode);
     return (
         <div>
             {
                 postCode && (
                     
                     <div className="main-container">
-                        <h1 className="location">{postCode.name}</h1>
+                        <h1 className="location">Weather in {postCode.name}</h1>
                         <p className="metrics">{postCode.main.temp}°</p>
+                        <div>{(() => {
+                            switch (postCode.weather[0].main) {
+                                case 'Clouds':
+                                return <Image />;
+                                case 'Rain':
+                                return 'Rain image'
+                            }
+                        })()}</div>
                         <div className="temparature">
                             <div>
                                 <h3>Max-Temp</h3>
