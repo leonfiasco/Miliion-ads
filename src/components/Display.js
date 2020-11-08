@@ -10,16 +10,16 @@ const Display = ({ postCode}) => {
                 postCode && (
                     
                     <div className="main-container">
-                        <h1>{postCode.name}</h1>
-                        <h4>{postCode.main.temp}°</h4>
+                        <h1 className="location">{postCode.name}</h1>
+                        <p className="metrics">{postCode.main.temp}°</p>
                         <div className="temparature">
                             <div>
                                 <h3>Max-Temp</h3>
-                                <h4>{postCode.main.temp_max}°</h4>
+                                <p className="metrics">{postCode.main.temp_max}°</p>
                             </div> 
                             <div>
                                 <h3>Min-Temp</h3>
-                                <h4>{postCode.main.temp_min}°</h4>  
+                                <p className="metrics">{postCode.main.temp_min}°</p>  
                             </div>    
                         </div>    
                     </div>

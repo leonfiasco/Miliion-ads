@@ -5,6 +5,8 @@
   font-family: 'Quicksand', sans-serif;
 }
 
+
+
 .wrapper {
   margin-right: auto;
   margin-left:  auto;
@@ -40,8 +42,24 @@
   background-color: steelblue;
 }
 
+
+
+.main-container {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  border: 3px solid red;
+}
+
 .temparature {
   display: flex;
-  margin: 0 auto;
+  text-align: center;
+  justify-content: center;
+  padding-top: 80px;
+}
+
+.metrics {
+  font-size: 20px;
+  color: #fff;
 }
 
