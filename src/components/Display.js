@@ -1,6 +1,11 @@
 import React from 'react';
 import Image from './Image';
 
+import cloud from '../images/clouds.svg' 
+import rain from '../images/rain.svg'
+import drizzle from '../images/drizzle.svg'
+import mist from '../images/mist.svg'
+
 
 
 const Display = ({ postCode}) => {
@@ -16,9 +21,13 @@ const Display = ({ postCode}) => {
                         <div>{(() => {
                             switch (postCode.weather[0].main) {
                                 case 'Clouds':
-                                return <Image />;
+                                return <Image cloud={cloud}/>;
                                 case 'Rain':
-                                return 'Rain image'
+                                return <Image rain={rain}/>;
+                                case 'Drizzle':
+                                return <Image drizzle={drizzle}/>;
+                                case 'Mist':
+                                return <Image mist={mist} />;
                             }
                         })()}</div>
                         <div className="temparature">
