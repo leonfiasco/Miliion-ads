@@ -37,9 +37,11 @@
   transform: translate(-50%, -50%);
   border-radius: 3px;
   overflow: hidden;
+  background-color: steelblue;
 }
 
 .temparature {
   display: flex;
   margin: 0 auto;
 }
+

@@ -8,7 +8,7 @@ const api_key = '5f230121f2f8c4e0e15027253023a8ae';
 
 const Main = () => {
     const [inputText, setInputText] = useState('');
-    const [postCode, setPostCode] = useState(null);
+    const [postCode, setPostCode] = useState();
 
     const requestApi = e => {
         e.preventDefault();

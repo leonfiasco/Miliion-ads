@@ -1,12 +1,15 @@
-import React from 'react'
+import React from 'react';
+
+
 
 const Display = ({ postCode}) => {
-    console.log(postCode);
+    
     return (
         <div>
             {
                 postCode && (
-                    <div>
+                    
+                    <div className="main-container">
                         <h1>{postCode.name}</h1>
                         <h4>{postCode.main.temp}°</h4>
                         <div className="temparature">
@@ -18,7 +21,7 @@ const Display = ({ postCode}) => {
                                 <h3>Min-Temp</h3>
                                 <h4>{postCode.main.temp_min}°</h4>  
                             </div>    
-                        </div>   
+                        </div>    
                     </div>
                 )
             }
