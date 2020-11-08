@@ -1,7 +1,7 @@
 import React from 'react'
 
 
-const Image = ({ cloud, rain, drizzle, mist }) => {
+const Image = ({ cloud, rain, drizzle, mist, fog }) => {
     return (
         <div>
            {(() => {
@@ -12,7 +12,9 @@ const Image = ({ cloud, rain, drizzle, mist }) => {
                } else if (drizzle) {
                    return <img alt="drizzle" src={drizzle} />
                } else if (mist) {
-                return <img alt="mist" src={mist} />
+                   return <img alt="mist" src={mist} />
+               } else if (fog) {
+                   return <img alt="fog" src={fog} />
                }
            })()}
         </div>

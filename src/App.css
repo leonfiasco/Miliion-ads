@@ -51,17 +51,17 @@
 }
 
 .location {
-  padding-top: 50px;
+  padding-top: 15px;
 }
 
 .temparature {
   display: flex;
   text-align: center;
   justify-content: space-between;
-  padding-top: 80px;
+  padding-top: 30px;
 }
 
-.metrics {
+.celsius {
   font-size: 20px;
   color: #fff;
 }
