@@ -32,6 +32,7 @@ const Display = ({ postCode}) => {
                                 return <Image mist={mist} />;
                                 case 'Fog':
                                 return <Image fog={fog} />;
+                                default:
                             }
                         })()}</div>
                         <div className="temparature">

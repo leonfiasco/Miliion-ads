@@ -6,7 +6,7 @@ const Image = ({ cloud, rain, drizzle, mist, fog }) => {
         <div>
            {(() => {
                if (cloud) {
-                   return <img alt="clouds" src={cloud} />
+                   return <img alt="cloud" src={cloud} />
                } else if (rain) {
                    return <img alt="rain" src={rain} />
                } else if (drizzle) {
