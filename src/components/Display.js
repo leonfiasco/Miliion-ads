@@ -9,19 +9,18 @@ import fog from '../images/fog.svg';
 
 
 
-const Display = ({ postCode}) => {
-    console.log(postCode);
+const Display = ({ weather}) => {
     return (
         <div>
             {
-                postCode && (
+                weather && (
                     
                     <div className="main-container">
-                        <h1 className="location">Weather in {postCode.name}</h1>
-                        <p className="celsius">{postCode.main.temp}°</p>
-                        <p>{postCode.weather[0].main}</p>
+                        <h1 className="location">Weather in {weather.name}</h1>
+                        <p className="celsius">{weather.main.temp}°</p>
+                        <p>{weather.weather[0].main}</p>
                         <div>{(() => {
-                            switch (postCode.weather[0].main) {
+                            switch (weather.weather[0].main) {
                                 case 'Clouds':
                                 return <Image cloud={cloud}/>;
                                 case 'Rain':
@@ -38,11 +37,11 @@ const Display = ({ postCode}) => {
                         <div className="temparature">
                             <div>
                                 <h3>Max-Temp</h3>
-                                <p className="celsius">{postCode.main.temp_max}°</p>
+                                <p className="celsius">{weather.main.temp_max}°</p>
                             </div> 
                             <div>
                                 <h3>Min-Temp</h3>
-                                <p className="celsius">{postCode.main.temp_min}°</p>  
+                                <p className="celsius">{weather.main.temp_min}°</p>  
                             </div>    
                         </div>    
                     </div>

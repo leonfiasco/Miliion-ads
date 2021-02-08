@@ -1,9 +1,9 @@
 import React from 'react'
 
-const SearchArea = ({ requestApi, handleChange }) => {
+const SearchArea = ({ weather, handleChange }) => {
     return (
         <div>
-            <form action='' onSubmit={requestApi}>
+            <form action='' onSubmit={weather}>
                  <input placeholder='enter postcode' type='text' onChange={handleChange} />
             </form>
         </div>
